@@ -43,3 +43,7 @@ You have to add an other target on the prometheus side :
   - targets:
     - bbb.domain.tld:9091
 ```
+
+# Grafana
+You can now have great dashboard like :
+![example_grafana.png](example_grafana.png)
