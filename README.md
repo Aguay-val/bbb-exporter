@@ -8,13 +8,13 @@ This only get Number of Room currently working, Number of participant and differ
 Juste change server endpoint, secret and listening port.
 
 For example :
-
+```
 export BBB_ENDPOINT=bbb.domain.tld
 export BBB_SECRET=$(bbb-conf --secret | grep "Secret:" | awk '{print $NF}')
 export LISTENING_PORT=9091
 
 sed -i "s/BBB_ENDPOINT/$BBB_ENDPOINT/g;s/BBB_SECRET/$BBB_SECRET/g;s/LISTENING_PORT/$LISTENING_PORT/g" run.sh
-
+```
 Then you should have something like this : 
 
 ```
